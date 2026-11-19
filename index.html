@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-  <meta name="description" content="maquillaje de calidad y productos de belleza">
-  <meta name="keywords" content="belleza, cuidado, maquillaje, productos, skincare">
+ <meta charset="UTF-8">
+  <meta name="description" content="Una taqueria la cual vende los mejores tacos de Tlalnepantla">
+  <meta name="keywords" content="Comida, servicios, tacos, garnachas, Tlalnepantla">
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>luneabeauty|maquillaje </title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+<title>Lunea beauty | Maquillaje</title>
 
 </head>
+<!--Aqui inicia el desarrollo del cuerpo de la página-->
 
 
 <body>
-<!--ENCABEZADO DE LA PAGINA></ENCABEZADO-->
-<header class="luneabeauty">
+<!--ENCABEZADO DE LA PÁGINA-->
+<header class="header-Lunea-beauty">
+
     <div class="container header-inner">
-      <a href="#inicio" class="logo-luneabeauty">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.jpg" alt="logo">
         
       </a>
 
@@ -25,19 +34,81 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="#oferta">Oferta</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero conocer mas informacion sobre tus productos.')">
-          <i data-lucide="message-circle"></i> Enviar 
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Lunea beauty.')">
+          <i data-lucide="message-circle"></i> Pedir ahora
         </button>
       </nav>
 
 
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
-</header>
+
+    </header>
+
+    <!-----INICIO DEL CONTENIDO PRINCIPAL DE LA PAGINA------->
+    <main>
+      <section id="inicio" class="container hero-section">
+      <div class="hero-content fade-in-up">
+        <p class="eyebrow">Maquillaje, belleza y estilo</p>
+        <h1 class="hero-title">Transforma tu apariencia con nuestros productos de maquillaje</h1>
+        <p class="hero-subtitle">
+          Ofrecemos una amplia gama de productos para realzar tu belleza natural y expresar tu estilo único.
+        </p>
+        <a href="#menu" class="btn btn-coffee hero-cta">
+          Descubre nuestros productos <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
+
+
+      <div class="hero-media">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <img
+          src="img/hero.jpg"
+          alt="Imagen de maquillaje y belleza"
+          width="1600"
+          height="1104"
+          class="hero-image"
+        />
+      </div>
+    </section>
+    
+    
+    </main>
+
+    <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo logo-light" aria-label="LUNEA BEAUTY, inicio">
+       
+        <span class="logo-text">LUNEA BEAUTY</span>
+      </a>
+
+
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#Servicios">Servicios</a>
+        <a href="#about">About</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+
+
+    <p class="copyright">
+      © <span id="current-year"></span> LUNEA BEAUTY. Todos los derechos reservados.
+    </p>
+  </footer>
+
+
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
